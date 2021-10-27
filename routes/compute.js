@@ -12,8 +12,8 @@ router.get('/', function(req, res, next) {
     if(storeValue == 0)
     storeValue=Math.random()
     res.write("Computes the values for Math.abs and math.acos function."+"\n")
-    res.write('Math.atan applied to '+storeValue+" is "+Math.abs(storeValue)+"\n");
-    res.end('Math.exp applied to '+storeValue+" is "+Math.acos(storeValue));
+    res.write('Math.abs applied to '+storeValue+" is "+Math.abs(storeValue)+"\n");
+    res.end('Math.acos applied to '+storeValue+" is "+Math.acos(storeValue));
  });
 
 module.exports = router;
